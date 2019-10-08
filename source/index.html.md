@@ -35,7 +35,7 @@ curl "api_endpoint_here"
 ```javascript
 const sync = require('sync');
 
-let api = kittn.authorize('<authentication_token>');
+let api = sync.authorize('<authentication_token>');
 ```
 
 > Make sure to replace `<authentication_token>` with your API key.
@@ -50,73 +50,20 @@ Sync expects for the API key to be included in all API requests to the server in
 You must replace <code>&lt;authentication_token&gt;</code> with your personal API key.
 </aside>
 
-<!---
-# Kittens
+# Certificates
 
-## Get All Kittens
+## Get a Specific Certificate
 
 ```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
+curl "https://api.terrahub-apps.com/certificates/certificates/<certificate_id>"
+  -H "Authorization: <authentication_token>"
 ```
 
 ```javascript
-const kittn = require('kittn');
+const sync = require('sync');
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-```
-
-This endpoint retrieves all kittens.
-
-### HTTP Request
-
-`GET http://example.com/api/kittens`
-
-### Query Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-## Get a Specific Kitten
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
+let api = sync.authorize('<authentication_token>');
+let max = api.certificates.get('<certificate_id>');
 ```
 
 > The above command returns JSON structured like this:
@@ -131,54 +78,14 @@ let max = api.kittens.get(2);
 }
 ```
 
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+This endpoint retrieves a specific certificate.
 
 ### HTTP Request
 
-`GET http://example.com/kittens/<ID>`
+`GET https://api.terrahub-apps.com/certificates/certificates/<ID>`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
-ID | The ID of the kitten to retrieve
-
-## Delete a Specific Kitten
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -X DELETE
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
-```
-
-This endpoint deletes a specific kitten.
-
-### HTTP Request
-
-`DELETE http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
-
---->
+ID | The ID of the certificate to retrieve
