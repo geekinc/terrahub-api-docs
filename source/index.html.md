@@ -6,7 +6,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
+  - <a href='https://d10zqag3vwl1ga.cloudfront.net'>Sign Up for a Developer Key</a>
 
 includes:
   - errors
@@ -40,7 +40,7 @@ let api = sync.authorize('<authentication_token>');
 
 > Make sure to replace `<authentication_token>` with your API key.
 
-Sync uses API keys to allow access to the API. You can register a new Sync API key at our [developer portal](http://example.com/developers).
+Sync uses API keys to allow access to the API. You can register a new Sync API key at our [developer portal](https://d10zqag3vwl1ga.cloudfront.net).
 
 Sync expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
