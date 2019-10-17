@@ -18,6 +18,8 @@ search: true
 
 Welcome to the Terrahub Sync API - You can use our API to access API endpoints, which can get information on various individuals, organizations and assets in our Sync system.
 
+Sync status is available at our [Uptime Dashboard](https://master.d2dxicno21n088.amplifyapp.com/index.html?load=/examples/dashboard.json).
+
 We have language bindings in Shell and JavaScript. You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
 # Authentication
