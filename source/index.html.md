@@ -57,7 +57,7 @@ You must replace <code>&lt;authentication_token&gt;</code> with your personal AP
 ## Get a Specific Certificate
 
 ```shell
-curl "https://api.terrahub-apps.com/certificates/certificates/<certificate_id>"
+curl "https://api.terrahub-apps.ca/certificates/certificates/<certificate_id>"
   -H "Authorization: <authentication_token>"
 ```
 
@@ -84,7 +84,7 @@ This endpoint retrieves a specific certificate.
 
 ### HTTP Request
 
-`GET https://api.terrahub-apps.com/certificates/certificates/<ID>`
+`GET https://api.terrahub-apps.ca/certificates/certificates/<ID>`
 
 ### URL Parameters
 
