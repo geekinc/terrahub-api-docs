@@ -16,9 +16,7 @@ search: true
 
 # Introduction
 
-Welcome to the Terrahub Sync API - You can use our API to access API endpoints, which can get information on various individuals, organizations and assets in our Sync system.
-
-Sync status is available at our [Uptime Dashboard](https://master.d2dxicno21n088.amplifyapp.com/index.html?load=/examples/dashboard.json).
+Welcome to the TerraHub API - You can use our API to access API endpoints, which can get information on various individuals, organizations and assets in our system.
 
 We have language bindings in Shell and JavaScript. You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
@@ -42,9 +40,9 @@ let api = sync.authorize('<authentication_token>');
 
 > Make sure to replace `<authentication_token>` with your API key.
 
-Sync uses API keys to allow access to the API. You can register a new Sync API key at our [developer portal](https://d375khndt1sbak.cloudfront.net/).
+TerraHub uses API keys to allow access to the API. You can register a new API key at our [developer portal](https://d375khndt1sbak.cloudfront.net/).
 
-Sync expects for the API key to be included in all API requests to the server in a header that looks like the following:
+TerraHub expects the API key to be included in all API requests to the server in a header that looks like the following:
 
 `Authorization: <authentication_token>`
 
